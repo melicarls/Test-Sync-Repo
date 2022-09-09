@@ -1,6 +1,6 @@
 schemaVersion: 1
 meta:
-  sourceVersionId: 37b6d040-3574-45d9-90d2-7cbb91095b66 # DO NOT CHANGE - Hex uses this to match up project versions when reimporting the file
+  sourceVersionId: 6c1c2992-74a5-402b-9d5b-1c1435755ae0 # DO NOT CHANGE - Hex uses this to match up project versions when reimporting the file
   description: ""
   projectId: 4fffdad1-e322-446d-a268-60de9c2f7984 # DO NOT CHANGE - Unique ID of the project from which this file was generated
   title: Compare Commit GH
@@ -14,7 +14,7 @@ cells:
     cellLabel: null
     cellType: CODE
     config:
-      source: print("Hello world")
+      source: print("Hello world second try")
 appLayout:
   fullWidth: false
   visibleMetadataFields:
