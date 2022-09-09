@@ -1,0 +1,29 @@
+schemaVersion: 1
+meta:
+  sourceVersionId: 37b6d040-3574-45d9-90d2-7cbb91095b66 # DO NOT CHANGE - Hex uses this to match up project versions when reimporting the file
+  description: ""
+  projectId: 4fffdad1-e322-446d-a268-60de9c2f7984 # DO NOT CHANGE - Unique ID of the project from which this file was generated
+  title: Compare Commit GH
+  timezone: null
+  codeLanguage: PYTHON
+  castDecimalsDefault: true
+projectAssets: {}
+sharedAssets: {}
+cells:
+  - cellId: 22bddd33-28f2-456d-b8da-f2f3d768fd83 # DO NOT CHANGE - Hex uses this to match up cells when reimporting the file, and detect any changes to existing cells
+    cellLabel: null
+    cellType: CODE
+    config:
+      source: print("Hello world")
+appLayout:
+  fullWidth: false
+  visibleMetadataFields:
+    - NAME
+    - DESCRIPTION
+    - AUTHOR
+    - LAST_EDITED
+    - LAST_RUN
+    - CATEGORIES
+    - STATUS
+    - TABLE_OF_CONTENTS
+  rows: []
