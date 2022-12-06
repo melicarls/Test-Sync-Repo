@@ -56,7 +56,7 @@ cells:
     cellId: 890ff96e-a2ff-4bb3-b445-7a7bae27d8f9 # DO NOT CHANGE - Hex uses this to match up cells when reimporting the file, and detect any changes to existing cells
     cellLabel: null
     config:
-      source: print("Hey")
+      source: print("Hey i'm borking the working branch")
 appLayout:
   fullWidth: false
   visibleMetadataFields:
