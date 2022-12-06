@@ -1,0 +1,71 @@
+schemaVersion: 1
+meta:
+  sourceVersionId: fb55f9f6-dee6-4404-8b6b-2680bfeeb6d1 # DO NOT CHANGE - Hex uses this to match up project versions when reimporting the file
+  description: ""
+  projectId: cb96f6bb-b257-4f58-a84f-05346b89b570 # DO NOT CHANGE - Unique ID of the project from which this file was generated
+  title: Chloropleth
+  timezone: null
+  appTheme: SYS_PREF
+  codeLanguage: PYTHON
+  status:
+    name: Exploratory
+  categories:
+    - name: Internal
+  castDecimalsDefault: true
+projectAssets:
+  dataConnections: []
+  envVars: []
+  secrets: []
+sharedAssets:
+  secrets: []
+  vcsPackages: []
+  dataConnections: []
+cells:
+  - cellType: CODE
+    cellId: 32733021-af53-45f3-9e49-c006a6b0fb4e # DO NOT CHANGE - Hex uses this to match up cells when reimporting the file, and detect any changes to existing cells
+    cellLabel: null
+    config:
+      source: |-
+        from urllib.request import urlopen
+        import json
+        with urlopen('https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json') as response:
+            counties = json.load(response)
+
+        import pandas as pd
+        df = pd.read_csv("https://raw.githubusercontent.com/plotly/datasets/master/fips-unemp-16.csv",
+                           dtype={"fips": str})
+
+        import plotly.express as px
+
+        fig = px.choropleth_mapbox(df, geojson=counties, locations='fips', color='unemp',
+                                   color_continuous_scale="Viridis",
+                                   range_color=(0, 12),
+                                   mapbox_style="carto-positron",
+                                   zoom=3, center = {"lat": 37.0902, "lon": -95.7129},
+                                   opacity=0.5,
+                                   labels={'unemp':'unemployment rate'}
+                                  )
+        fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+        fig.show()
+appLayout:
+  fullWidth: false
+  visibleMetadataFields:
+    - NAME
+    - DESCRIPTION
+    - AUTHOR
+    - LAST_EDITED
+    - LAST_RUN
+    - CATEGORIES
+    - STATUS
+    - TABLE_OF_CONTENTS
+  rows:
+    - columns:
+        - start: 0
+          end: 120
+          elements:
+            - showSource: false
+              hideOutput: false
+              type: CELL
+              cellId: 32733021-af53-45f3-9e49-c006a6b0fb4e
+              height: null
+              showLabel: true
