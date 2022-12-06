@@ -1,6 +1,6 @@
 schemaVersion: 1
 meta:
-  sourceVersionId: 47bec454-ab69-4852-886a-577bb1daf702 # DO NOT CHANGE - Hex uses this to match up project versions when reimporting the file
+  sourceVersionId: d36bb36f-72b7-47eb-b753-6c5b6470facf # DO NOT CHANGE - Hex uses this to match up project versions when reimporting the file
   description: ""
   projectId: cb96f6bb-b257-4f58-a84f-05346b89b570 # DO NOT CHANGE - Unique ID of the project from which this file was generated
   title: Chloropleth
@@ -51,7 +51,12 @@ cells:
     cellId: 01fad58d-83fc-4156-9373-2fa6df245872 # DO NOT CHANGE - Hex uses this to match up cells when reimporting the file, and detect any changes to existing cells
     cellLabel: null
     config:
-      source: print("Hello world!!!!")
+      source: print("Hello world!!!! States diverge")
+  - cellType: CODE
+    cellId: 890ff96e-a2ff-4bb3-b445-7a7bae27d8f9 # DO NOT CHANGE - Hex uses this to match up cells when reimporting the file, and detect any changes to existing cells
+    cellLabel: null
+    config:
+      source: print("Hey")
 appLayout:
   fullWidth: false
   visibleMetadataFields:
